@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f5f4fa;
+  --third-color: #2f303a;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --third-text-color: #000000;
+  --accent: #2196f3;
+  --accent-hover: #188ce8;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Logo start************************************************************************************************ */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+}
+
+.logo--header {
+  color: var(--third-color);
+}
+
+.logo--footer {
+  color: var(--primary-color);
+}
