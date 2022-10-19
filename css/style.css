@@ -27,7 +27,95 @@ a {
   text-decoration: none;
 }
 
-/* Logo start************************************************************************************************ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+/* ------------------------------------- Buttons -------------------------------- */
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+
+  color: var(--primary-color);
+  background-color: var(--accent);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-hover);
+  cursor: pointer;
+}
+
+.button-filter {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-color);
+}
+
+.button-filter:hover,
+.button-filter:focus,
+.button-current {
+  background-color: var(--accent);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+/* ------------------------------------- Header --------------------------------- */
+.header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header__link {
+  color: var(--secondary-text-color);
+}
+
+.header__link--current,
+.header__link:hover,
+.header__link:focus {
+  color: var(--accent);
+}
+
+.header > a {
+  color: var(--primary-text-color);
+}
+
+.header > a:hover,
+.header > a:focus {
+  color: var(--accent);
+}
+
+/* ------------------------------------- Logo ----------------------------------- */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -38,9 +126,96 @@ a {
 }
 
 .logo--header {
-  color: var(--third-color);
+  color: var(--third-text-color);
 }
 
 .logo--footer {
   color: var(--primary-color);
+}
+
+/* ---------------------------------- Hero ---------------------------------------- */
+.hero {
+  background-color: var(--third-color);
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+/* ---------------------------------- Features ------------------------------------- */
+.features {
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+/* ---------------------------------- Team ----------------------------------------- */
+.team {
+  background-color: var(--secondary-color);
+}
+
+.team__card {
+  background-color: var(--primary-color);
+}
+
+.team__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+
+  letter-spacing: 0.03em;
+}
+/* --------------------------------- Footer --------------------------------------- */
+footer {
+  background-color: var(--third-color);
+}
+
+address {
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+address a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+address > a:hover,
+address > a:focus {
+  color: rgba(33, 150, 243, 0.6);
+}
+/* ------------------------------------------ Portfolio --------------------------------------------------------------- */
+
+.card__title {
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 1.88;
 }
