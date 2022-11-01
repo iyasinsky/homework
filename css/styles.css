@@ -19,12 +19,31 @@ body {
   background-color: var(--primary-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -42,16 +61,34 @@ a {
 }
 
 .title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 
   text-align: center;
 
   color: var(--secondary-text-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ------------------------------------- Buttons -------------------------------- */
 .button {
+  padding: 10px 32px;
+  min-width: 200px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -61,6 +98,10 @@ a {
 
   color: var(--primary-color);
   background-color: var(--accent);
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 0.15);
 }
 
 .button:hover,
@@ -70,6 +111,7 @@ a {
 }
 
 .button-filter {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -80,6 +122,8 @@ a {
 
   color: var(--secondary-text-color);
   background-color: var(--secondary-color);
+  border: none;
+  border-radius: 4px;
 }
 
 .button-filter:hover,
@@ -89,34 +133,73 @@ a {
   color: var(--primary-color);
   cursor: pointer;
 }
+
 /* ------------------------------------- Header --------------------------------- */
 .header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__box {
+  display: flex;
+  align-items: center;
 }
 
 .header__link {
-  color: var(--secondary-text-color);
+  color: currentColor;
+  padding: 32px 0;
 }
 
-.header__link--current,
+.header__link:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header__link:hover,
 .header__link:focus {
   color: var(--accent);
 }
 
-.header > a {
-  color: var(--primary-text-color);
+.nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
 }
 
-.header > a:hover,
-.header > a:focus {
+.nav__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item + .nav__item {
+  margin-left: 50px;
+}
+/* Альтернативний варіант */
+/* .nav__item:not(:first-child) {
+  margin-left: 50px;
+} */
+
+.nav__link {
+  display: block;
+  color: var(--secondary-text-color);
+  padding: 32px 0;
+}
+
+.nav__link--current,
+.nav__link:hover,
+.nav__link:focus {
   color: var(--accent);
 }
 
 /* ------------------------------------- Logo ----------------------------------- */
 .logo {
+  /* display: block; */
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -136,14 +219,18 @@ a {
 /* ---------------------------------- Hero ---------------------------------------- */
 .hero {
   background-color: var(--third-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero__title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -151,6 +238,19 @@ a {
 }
 /* ---------------------------------- Features ------------------------------------- */
 .features {
+  display: flex;
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
 
@@ -158,17 +258,45 @@ a {
 
   color: var(--secondary-text-color);
 }
+/* ---------------------------------- Work ----------------------------------------- */
+
+.work {
+  padding-top: 0;
+}
+
+.work__list {
+  display: flex;
+}
+
+.work__item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* ---------------------------------- Team ----------------------------------------- */
 .team {
   background-color: var(--secondary-color);
 }
 
-.team__card {
+.team__list {
+  display: flex;
+}
+
+.team__item {
   background-color: var(--primary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__box {
+  padding: 30px;
 }
 
 .team__title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -188,26 +316,67 @@ a {
   letter-spacing: 0.03em;
 }
 /* --------------------------------- Footer --------------------------------------- */
-footer {
+.footer {
   background-color: var(--third-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-address {
+.address {
+  margin-top: 20px;
   font-style: normal;
   color: var(--primary-color);
 }
 
-address a {
+/* .address__text {
+  margin-bottom: 9px;
+} */
+
+.address__link {
+  display: block;
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-address > a:hover,
-address > a:focus {
+.address__link:hover,
+.address__link:focus {
   color: rgba(33, 150, 243, 0.6);
 }
 /* ------------------------------------------ Portfolio --------------------------------------------------------------- */
 
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.card-set__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.card {
+  border: 1px solid #eeeeee;
+}
+
+.card__description {
+  padding: 20px 24px;
+}
+
 .card__title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
 
@@ -219,3 +388,7 @@ address > a:focus {
   font-size: 16px;
   line-height: 1.88;
 }
+
+/* article * {
+  outline: 1px solid green;
+} */
