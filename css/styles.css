@@ -230,7 +230,7 @@ img {
 /* ---------------------------------- Hero ---------------------------------------- */
 .hero {
   background-color: var(--third-color);
-  background-image: linear-gradient(to left, rgb(47 48 58 / 0.4), rgb(47 48 58 / 0.4)), url(/images/hero.jpg);
+  background-image: linear-gradient(to left, rgb(47 48 58 / 0.4), rgb(47 48 58 / 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
