@@ -130,8 +130,10 @@ img {
 .button-filter:hover,
 .button-filter:focus,
 .button-current {
-  background-color: var(--accent);
   color: var(--primary-color);
+  background-color: var(--accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
   cursor: pointer;
 }
 
@@ -357,6 +359,11 @@ img {
   border-radius: 50%;
 }
 
+.social-links__link--footer {
+  fill: var(--primary-color);
+  background-color: rgb(255 255 255 / 0.1);
+}
+
 .social-links__link:hover,
 .social-links__link:focus {
   fill: var(--primary-color);
@@ -400,15 +407,20 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
 .address {
   margin-top: 20px;
   font-style: normal;
   color: var(--primary-color);
 }
-
-/* .address__text {
-  margin-bottom: 9px;
-} */
 
 .address__link {
   display: block;
@@ -419,6 +431,17 @@ img {
 .address__link:hover,
 .address__link:focus {
   color: rgba(33, 150, 243, 0.6);
+}
+
+.action-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
 }
 /* ------------------------------------------ Portfolio --------------------------------------------------------------- */
 
@@ -449,6 +472,12 @@ img {
   border: 1px solid #eeeeee;
 }
 
+.card:hover,
+.card:focus {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 0.12), 0px 4px 4px rgb(0 0 0 / 0.6), 1px 4px 6px rgb(0 0 0 / 0.16);
+  cursor: pointer;
+}
+
 .card__description {
   padding: 20px 24px;
 }
@@ -466,7 +495,3 @@ img {
   font-size: 16px;
   line-height: 1.88;
 }
-
-/* article * {
-  outline: 1px solid green;
-} */
