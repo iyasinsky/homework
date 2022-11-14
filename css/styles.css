@@ -626,8 +626,8 @@ img {
 
 .button-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: -10px;
+  right: -10px;
   padding: 6px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -641,7 +641,6 @@ img {
 .button-close:hover,
 .button-close:focus {
   fill: var(--accent);
-  border-color: var(--accent);
 }
 
 .modal__svg {
