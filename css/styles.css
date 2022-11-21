@@ -74,19 +74,19 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-block: 94px;
 }
 
 .container {
   width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
+  padding-inline: 15px;
 }
 
 /* ------------------------------------- Buttons -------------------------------- */
 .button {
+  display: block;
+  margin-inline: auto;
   padding: 10px 32px;
   min-width: 200px;
 
@@ -318,6 +318,7 @@ img {
 
 .work__link {
   position: relative;
+  display: block;
 }
 
 .work__item:not(:last-child) {
@@ -673,11 +674,12 @@ img {
 
 .button-close {
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: 0px;
+  right: 0px;
   padding: 6px;
+  transform: translate(32%, -32%);
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(0 0 0 / 0.1);
   border-radius: 50%;
 
   background-color: var(--primary-color);
@@ -755,4 +757,92 @@ img {
 
 .form-field:focus-within {
   fill: var(--accent);
+}
+
+.form-comment {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-comment > textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-comment > label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+.form-comment:focus-within > textarea {
+  border-color: var(--accent);
+}
+
+.form-comment:focus-within > label,
+.form-comment > textarea:not(:placeholder-shown) + label {
+  transform: translateY(calc(-200% - 2px));
+}
+
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  column-gap: 5px;
+  margin-bottom: 30px;
+}
+
+.form-checkbox input {
+  position: absolute;
+  appearance: none;
+}
+
+.form-checkbox span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.form-checkbox span::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 2px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox:hover > span::before,
+.form-checkbox > input:focus + span::before {
+  border-color: var(--accent);
+}
+
+.form-checkbox > input:checked + span::before {
+  background-image: url('../images/icon-check.svg');
+  background-color: var(--accent);
+  border-color: var(--accent);
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.form-checkbox a {
+  text-decoration: underline;
+  color: var(--accent);
 }

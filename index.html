@@ -408,7 +408,7 @@
         </button>
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
-        <form action="form">
+        <form class="form" action="form">
           <label class="form-field">
             <input type="text" name="user-name" placeholder=" " />
             <span>Имя</span>
@@ -433,17 +433,18 @@
             </svg>
           </label>
 
-          <div class="">
-            <textarea name="" id="" rows="10"></textarea>
-            <label for="">Комментарий</label>
+          <div class="form-comment">
+            <textarea name="comment" id="comment" placeholder=" "></textarea>
+            <label for="comment">Комментарий</label>
           </div>
 
-          <div class="">
-            <input type="checkbox" />
-            <label for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-          </div>
+          <label class="form-checkbox">
+            <input type="checkbox" name="checkbox" />
+            <span> Соглашаюсь с рассылкой и принимаю</span>
+            <a href="">Условия договора</a>
+          </label>
 
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
