@@ -1,0 +1,87 @@
+.footer {
+  background-color: $third-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+  color: $primary-color;
+}
+
+.address__link {
+  display: block;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: rgba(33, 150, 243, 0.6);
+}
+
+.newsletter-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.singup-form__input {
+  width: 358px;
+  padding: 15px 16px;
+
+  font-size: 16px;
+  letter-spacing: 0.03em;
+
+  color: $primary-color;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.singup-form__input::placeholder {
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.singup-form__input:hover,
+.singup-form__input:focus,
+.singup-form__input:not(:placeholder-shown):required {
+  cursor: pointer;
+  border-color: $accent-hover;
+}
+
+.newsletter-form__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.call-to-action {
+  margin-right: auto;
+}
+
+.action-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-color;
+}

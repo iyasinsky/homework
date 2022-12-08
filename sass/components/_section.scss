@@ -1,0 +1,13 @@
+.section {
+  padding-block: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+      
+    @include text(700, 36px, 1.17, 0.03em);
+      
+    text-align: center;
+      
+    color: $secondary-text-color;
+  }
+}

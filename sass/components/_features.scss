@@ -1,0 +1,32 @@
+.features {
+  display: flex;
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__thumb {
+  display: inline-flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-color;
+  border-radius: 4px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+
+  color: $secondary-text-color;
+}

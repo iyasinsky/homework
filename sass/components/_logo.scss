@@ -1,0 +1,18 @@
+.logo {
+  font: $logo-font;
+  color: $accent;
+
+  &--dark {
+    color: $third-text-color;
+  }
+
+  &--light {
+    color: $primary-color;
+  }
+}
+
+.logo__nav {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
