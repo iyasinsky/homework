@@ -1,18 +1,24 @@
 .work {
   padding-top: 0;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .work__list {
   display: flex;
+  margin: -15px;
+}
+
+.work__item {
+  margin: 15px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .work__link {
   position: relative;
   display: block;
-}
-
-.work__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .work__description {
