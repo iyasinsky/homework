@@ -1,6 +1,16 @@
 .logo {
+  display: inline-block;
   font: $logo-font;
   color: $accent;
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  .footer-contacts > & {
+    margin-bottom: 20px;
+  }
 
   &--dark {
     color: $third-text-color;

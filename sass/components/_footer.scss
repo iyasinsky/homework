@@ -1,20 +1,20 @@
 .footer {
+  padding-block: 60px;
+  text-align: center;
   background-color: $third-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
-.footer-box {
-  display: flex;
-  align-items: baseline;
-}
+// .footer-box {
+//   display: flex;
+//   align-items: baseline;
+// }
 
 .footer-contacts {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  // margin-right: 70px;
 }
 
 .address {
-  margin-top: 20px;
   font-style: normal;
   color: $primary-color;
 }
@@ -31,10 +31,15 @@
   color: rgba(33, 150, 243, 0.6);
 }
 
-.newsletter-form {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
+// .newsletter-form {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 12px;
+// }
+
+.newsletter-form > label {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .singup-form__input {
@@ -72,7 +77,8 @@
 }
 
 .call-to-action {
-  margin-right: auto;
+  margin-bottom: 60px;
+  // margin-right: auto;
 }
 
 .action-title {
