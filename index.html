@@ -114,19 +114,43 @@
           <ul class="work__list">
             <li class="work__item">
               <a class="work__link" href="">
-                <img src="./images/img1.jpg" alt="Десктопные приложения" width="370" />
+                <img
+                  srcset="
+                    ./images/box1-370.jpg 370w,
+                    ./images/box1-740.jpg 740w,
+                  "
+                  src="./images/box1-370.jpg"
+                  alt="Десктопные приложения" 
+                  width="370"
+                />
                 <p class="work__description">Десктопные приложения</p>
               </a>
             </li>
             <li class="work__item">
               <a class="work__link" href="">
-                <img src="./images/img2.jpg" alt="Мобильные приложения" width="370" />
+                <img 
+                  srcset="
+                    ./images/box2-370.jpg 370w,
+                    ./images/box2-740.jpg 740w,
+                  "
+                  src="./images/box2-370.jpg"
+                  alt="Мобильные приложения" 
+                  width="370"
+                />
                 <p class="work__description">Мобильные приложения</p>
               </a>
             </li>
             <li class="work__item">
               <a class="work__link" href="">
-                <img src="./images/img3.jpg" alt="Дизайнерские решения" width="370" />
+                <img
+                  srcset="
+                    ./images/box3-370.jpg 370w,
+                    ./images/box3-740.jpg 740w,
+                  "
+                  src="./images/box3-370.jpg"
+                  alt="Дизайнерские решения"
+                  width="370"
+                />
                 <p class="work__description">Дизайнерские решения</p>
               </a>
             </li>
@@ -134,12 +158,21 @@
         </div>
       </section>
       <!-- Team section -->
-      <section style="display: none;" class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <!-- <img src="./images/card-igor.jpg" alt="Игорь Демьяненко" width="270" /> -->
+              <picture>
+                <source srcset="./images/team-card-1-450.webp 450w, ./images/team-card-1-900.webp 900w" type="image/webp">
+                <img
+                  srcset="./images/team-card-1-450.jpg 450w, ./images/team-card-1-900.jpg 900w"
+                  src="./images/team-card-1-450.jpg"
+                  alt="Игорь Демьяненко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw"
+                />
+              </picture>
+              
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -176,7 +209,12 @@
               </div>
             </li>
             <li class="team__item">
-              <!-- <img src="./images/card-olga.jpg" alt="Ольга Репина" width="270" /> -->
+              <img
+                srcset="./images/team-card-2-450.jpg 450w, ./images/team-card-2-900.jpg 900w"
+                src="./images/team-card-2-450.jpg"
+                alt="Ольга Репина"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw"
+              />
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -213,7 +251,12 @@
               </div>
             </li>
             <li class="team__item">
-              <!-- <img src="./images/card-nikolay.jpg" alt="Николай Тарасов" width="270" /> -->
+              <img
+                srcset="./images/team-card-3-450.jpg 450w, ./images/team-card-3-900.jpg 900w"
+                src="./images/team-card-3-450.jpg"
+                alt="Николай Тарасов" 
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw"
+              />
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -250,7 +293,12 @@
               </div>
             </li>
             <li class="team__item">
-              <!-- <img src="./images/card-mikhail.jpg" alt="Михаил Ермаков" width="270" /> -->
+              <img
+                srcset="./images/team-card-4-450.jpg 450w, ./images/team-card-4-900.jpg 900w"
+                src="./images/team-card-4-450.jpg"
+                alt="Михаил Ермаков"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw"
+              />
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
